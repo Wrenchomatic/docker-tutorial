@@ -1,0 +1,9 @@
+version: '3'
+#Run docker-compose run youtube-dl-ubuntu "video URL"
+services:
+        youtube-dl-ubuntu:
+                image: wrench94/youtube-dl:latest
+                build: .
+                volumes:
+                        - .:/mydir
+                container_name: youtube-dl
